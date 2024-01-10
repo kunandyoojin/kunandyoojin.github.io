@@ -746,45 +746,7 @@
 			location.href = "https://qr.kakaopay.com/FHzPiOZQm"
 		})
 	})
-
-  	// var container = document.getElementById('map');
-  	// var options = {
-	// 	center: new daum.maps.LatLng(37.5047222, 126.995),
-	// 	level: 3
-  	// };
-
-  	// var map = new daum.maps.Map(container, options);
-
-  	// //map.setDraggable(false);
-
-  	// var positions = [
-	// 	{
-	// 	  title: '남서울교회',
-	// 	  latlng: new daum.maps.LatLng(37.5047222, 126.995),
-	// 	  link: "https://place.map.kakao.com/1578600646"
-	// 	}
-	//   ];
-
-  	// for (var i = 0; i < positions.length; i ++) {
-	// 	// 마커를 생성합니다
-	// 	var marker = new daum.maps.Marker({
-	// 	  position: positions[i].latlng
-	// 	});
-
-	// 	marker.setMap(map);
-
-	// 	var iwContent = '<a style="text-align: center`; padding: 5px; font:14px/2 sans-serif; text-decoration: underline;" target="_blank" href="' + positions[i].link +'"><strong>' + positions[i].title  + '</strong></a>',
-	// 		iwPosition = positions[i].latlng
-
-
-	// 	var infowindow = new daum.maps.InfoWindow({
-	// 	  position: iwPosition, // 마커를 표시할 위치
-	// 	  content : iwContent, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
-	// 	});
-
-	// 	infowindow.open(map, marker);
-
-  	}
 </script>
+<script>document.documentElement.addEventListener('touchstart', function (event) {  if (event.touches.length > 1) {   event.preventDefault();  } }, false);</script>
 </body>
 </html>
