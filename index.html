@@ -490,6 +490,16 @@
 <!-- Map -->
 <div class="container">
 	<div id="map" style="height:250px; margin-bottom: 20px;"></div>
+	<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=f92919021a74e23728cbe32d4314bce5"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(37.5047222, 126.995),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
 </div>
 
 <!-- 계좌번호 -->
@@ -669,7 +679,6 @@
 <script src="js/magnific-popup-options.js"></script>
 <!-- Main JS (Do not remove) -->
 <script src="js/main.js?v=20180722"></script>
-<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=c5106fe4c851efe310693e2f07fa2e29"></script>
 <!-- font-awesome -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 <script type="text/javascript">
@@ -724,7 +733,7 @@
 
 		marker.setMap(map);
 
-		var iwContent = '<a style="padding: 5px; font:14px/2 sans-serif; text-decoration: underline;" target="_blank" href="' + positions[i].link +'"><strong>' + positions[i].title  + '</strong></a>',
+		var iwContent = '<a style="text-align: center`; padding: 5px; font:14px/2 sans-serif; text-decoration: underline;" target="_blank" href="' + positions[i].link +'"><strong>' + positions[i].title  + '</strong></a>',
 			iwPosition = positions[i].latlng
 
 
