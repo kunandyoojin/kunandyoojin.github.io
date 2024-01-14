@@ -31,6 +31,8 @@
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<!-- Magnific popup  -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- popper -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 	<!-- Bootstrap  -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
@@ -166,6 +168,23 @@
 	</button>
 </div>
 <!-- Modal -->
+
+<div hidden>
+	<div data-name="popover-content-1">
+		<span id="bankaccountKun">신한 110-386-427463</span>
+		<a type="button" class="btn btn-light btn-sm" id ="copy" data-clipboard-text="신한 110-386-427463"><span class="icon-clipboard"></span></a> 
+	</div>
+	<div data-name="popover-content-2">
+		<span id="bankaccountyoojin">우리 1002-551-848723</span>
+		<a type="button" class="btn btn-light btn-sm" id ="copy" data-clipboard-text="우리 1002-551-848723"><span class="icon-clipboard"></span></a>	</div>
+	<div data-name="popover-content-3">
+		<span id="bankaccountKun">건아빠계좌</span>
+		<a type="button" class="btn btn-light btn-sm" id ="copy" data-clipboard-text="신한 110-386-427463"><span class="icon-clipboard"></span></a>	</div>
+	<div data-name="popover-content-4">
+		<span id="bankaccountKun">유진아빠계좌</span>
+		<a type="button" class="btn btn-light btn-sm" id ="copy" data-clipboard-text="신한 110-386-427463"><span class="icon-clipboard"></span></a>	</div>
+</div>
+
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog" role="document">
 	<div class="modal-content">
@@ -178,20 +197,38 @@
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;인 &nbsp;&nbsp;건&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a type="button" class="btn btn-success btn-sm" href="tel:010-8944-0848"><span class="icon-phone"></span></a> 
 			<a type="button" class="btn btn-outline-primary btn-sm" href="sms:010-8944-0848"><span class="icon-comments"></span></a>
-			<a type="button" class="btn btn-warning btn-sm" href="http://qr.kakao.com/talk/B6mFXeZkeY7AhEn3W.SkD_MhcEI-"><span class="icon-comment"></span></a><br>
+			<a type="button" class="btn btn-warning btn-sm" href="http://qr.kakao.com/talk/B6mFXeZkeY7AhEn3W.SkD_MhcEI-"><span class="icon-comment"></span></a>
+			<a id="example-1" tabindex="0" class="btn btn-lg btn-dark btn-sm" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="신한 110-386-427463">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.8 2.8 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124q.219.416.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442q.33-.421.55-.836L15 11.105V5.383l-3.002 1.801a2.8 2.8 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+				  </svg> 
+			</a>
+			<br>
 		</div>
 		<div style="font-size: 16px; padding-bottom: 10px">
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;최유진&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 			<a type="button" class="btn btn-success btn-sm" href="tel:010-7456-3725"><span class="icon-phone"></span></a> 
 			<a type="button" class="btn btn-outline-primary btn-sm" href="sms:010-7456-3725"><span class="icon-comments"></span></a>
 			<a type="button" class="btn btn-warning btn-sm" href="http://qr.kakao.com/talk/dtzxFP0InlxqKq2VmFrW0PHxRhQ-"><span class="icon-comment"></span></a>
+			<a id="example-2" tabindex="0" class="btn btn-lg btn-dark btn-sm" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="신한 110-386-427463">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.8 2.8 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124q.219.416.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442q.33-.421.55-.836L15 11.105V5.383l-3.002 1.801a2.8 2.8 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+				  </svg> 
+			</a>
+			<br>
 		</div>
 		
 			<span style="font-size: 18px; font-family: ChosunSg"><strong>신랑측 혼주</strong></span>
 			<div style="font-size: 16px; padding-bottom: 10px">
 				&nbsp;父 인남식&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<a type="button" class="btn btn-success btn-sm" href="tel:010-2464-0848"><span class="icon-phone"></span></a> 
-				<a type="button" class="btn btn-outline-primary btn-sm" href="sms:010-2464-0848"><span class="icon-comments"></span></a><br>
+				<a type="button" class="btn btn-outline-primary btn-sm" href="sms:010-2464-0848"><span class="icon-comments"></span></a>
+				<a id="example-3" tabindex="0" class="btn btn-lg btn-dark btn-sm" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="신한 110-386-427463">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.8 2.8 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124q.219.416.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442q.33-.421.55-.836L15 11.105V5.383l-3.002 1.801a2.8 2.8 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+					  </svg> 
+				</a>
+				<br>
 			</div>
 			<div style="font-size: 16px; padding-bottom: 10px">
 				&nbsp;母 정희주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -203,7 +240,13 @@
 			<div style="font-size: 16px; padding-bottom: 10px">
 				&nbsp;父 최수열&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<a type="button" class="btn btn-success btn-sm" href="tel:010-3202-4300"><span class="icon-phone"></span></a> 
-				<a type="button" class="btn btn-outline-primary btn-sm" href="sms:010-3202-4300"><span class="icon-comments"></span></a><br>
+				<a type="button" class="btn btn-outline-primary btn-sm" href="sms:010-3202-4300"><span class="icon-comments"></span></a>
+				<a id="example-4" tabindex="0" class="btn btn-lg btn-dark btn-sm" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="신한 110-386-427463">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.8 2.8 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124q.219.416.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442q.33-.421.55-.836L15 11.105V5.383l-3.002 1.801a2.8 2.8 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+					  </svg> 
+				</a>
+				<br>
 			</div>
 			<div style="font-size: 16px; padding-bottom: 10px">
 				&nbsp;母 김보영&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -220,131 +263,6 @@
 </div>
 
 <br>
-
-<!-- 달력 -->
-<!-- <div class="container animate-box mb-5 mt-5">
-	<div class="calendar shadow bg-white p-4">
-		<p class="font-italic mb-5 h6">
-			2024년 5월 <br>
-		</p>
-		<ol class="day-names list-unstyled text-center">
-			<li class="font-weight-bold text-uppercase" style="color: red">Sun</li>
-			<li class="font-weight-bold text-uppercase">Mon</li>
-			<li class="font-weight-bold text-uppercase">Tue</li>
-			<li class="font-weight-bold text-uppercase">Wed</li>
-			<li class="font-weight-bold text-uppercase">Thu</li>
-			<li class="font-weight-bold text-uppercase">Fri</li>
-			<li class="font-weight-bold text-uppercase">Sat</li>
-		</ol>
-		<ol class="days list-unstyled text-center">
-			<li>
-
-			</li>
-			<li>
-
-			</li>
-			<li>
-
-			</li>
-			<li>
-				<div class="date">1</div>
-			</li>
-			<li>
-				<div class="date">2</div>
-			</li>
-			<li>
-				<div class="date">3</div>
-			</li>
-			<li>
-				<a href="./files/myevents.ics">
-					<div class="date event"  style="background-color: #FFEBD8; color: black">4</div>
-				</a>
-			</li>
-			<li>
-				<div class="date" style="color: red">5</div>
-			</li>
-			<li>
-				<div class="date">6</div>
-			</li>
-			<li>
-				<div class="date" >7</div>
-			</li>
-			<li>
-				<div class="date">8</div>
-			</li>
-			<li>
-				<div class="date">9</div>
-			</li>
-			<li>
-				<div class="date">10</div>
-			</li>
-			<li>
-				<div class="date">11</div>
-			</li>
-			<li>
-				<div class="date" style="color: red">12</div>
-			</li>
-			<li>
-				<div class="date">13</div>
-			</li>
-			<li>
-				<div class="date" >14</div>
-			</li>
-			<li>
-				<div class="date">15</div>
-			</li>
-			<li>
-				<div class="date">16</div>
-			</li>
-			<li>
-				<div class="date">17</div>
-			</li>
-			<li>
-				<div class="date">18</div>
-			</li>
-			<li>
-				<div class="date" style="color: red">19</div>
-			</li>
-			<li>
-				<div class="date">20</div>
-			</li>
-			<li>
-				<div class="date" >21</div>
-			</li>
-			<li>
-				<div class="date">22</div>
-			</li>
-			<li>
-				<div class="date">23</div>
-			</li>
-			<li>
-				<div class="date">24</div>
-			</li>
-			<li>
-				<div class="date">25</div>
-			</li>
-			<li>
-				<div class="date" style="color: red">26</div>
-			</li>
-			<li>
-				<div class="date">27</div>
-			</li>
-			<li>
-				<div class="date">28</div>
-			</li>
-			<li>
-				<div class="date">29</div>
-			</li>
-			<li>
-				<div class="date">30</div>
-			</li>
-			<li>
-				<div class="date">31</div>
-			</li>
-		</ol>
-	</div>
-</div> -->
-
 
 <!-- 장소 -->
 <div id="qbootstrap-when-where" data-section="when-where" style="padding-bottom: 0" class="mt-5">
@@ -612,127 +530,6 @@
 	</div>
 </div>
 
-
-<!-- 계좌번호 -->
-<!-- <div class="container mt-5"> -->
-	<!-- <div class="row">
-		<div class="col-md-12 text-center">
-			<div class="col-md-12 text-center section-heading svg-sm colored">
-				<p style="font-size: 20px; margin-bottom: 10px; color: rgba(0, 0, 0, 0.7)">
-					마음 전하실 곳
-				</p>
-				<hr style="width:30px; margin: auto;" class="border-2"/>
-			</div>
-		</div>
-	</div>
-
-	<div class="row mt-3">
-		<div class="col-md-12 text-center animate-box">
-			<p style="font-size: 13px; margin-bottom: 0px;">
-				참석이 어려우신 분들을 위해</br>
-				계좌번호를 기재하였습니다.</br>
-				너그러운 마음으로 양해 부탁드립니다.
-			</p>
-		</div>
-	</div>
-
-	<div class="row mt-4">
-		<div class="col-md-12">
-			<div class="accordion " id="accordionFlushExample">
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="flush-headingOne">
-						<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-							<div class="accordion-header-text">신랑 측 계좌번호</div>
-						</button>
-					</h2>
-					<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne">
-						<div class="accordion-body">
-							<p>신한은행 110-387-969844
-								<button id="seungwoo-account" type="button" class="btn btn-outline-secondary btn-sm pull-right bank-account" value="110-387-969844">
-									<span class="icon-clipboard2"></span>
-									복사하기
-								</button>
-							</p>
-							<p>한승우
-								<button id="seungwoo-kakaopay" type="button" class="btn btn-outline-secondary btn-sm pull-right" value="110-387-969844">
-									<span class="icon-comment"></span>
-									송금하기
-								</button>
-							</p>
-						</div>
-						<hr class="hr hr-blurry" />
-						<div class="accordion-body">
-							<p>농협 130044-51-144676
-								<button id="seungwoo-father" type="button" class="btn btn-outline-secondary btn-sm pull-right bank-account" value="130044-51-144676">
-									<span class="icon-clipboard2"></span>
-									복사하기
-								</button>
-							</p>
-							<p>한정수</p>
-						</div>
-						<hr class="hr hr-blurry" />
-						<div class="accordion-body">
-							<p>국민은행 164501-04-140984
-								<button id="seungwoo-mother" type="button" class="btn btn-outline-secondary btn-sm pull-right bank-account" value="164501-04-140984">
-									<span class="icon-clipboard2"></span>
-									복사하기
-								</button>
-							</p>
-							<p>소영희</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="accordion mt-2" id="accordionFlushExample">
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="flush-headingTwo">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-							<div class="accordion-header-text">신부 측 계좌번호</div>
-						</button>
-					</h2>
-					<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo">
-						<div class="accordion-body">
-							<p>우리은행 1002-541-167080
-								<button id="chaeeun-account" type="button" class="btn btn-outline-secondary btn-sm pull-right bank-account" value="1002-541-167080">
-									<span class="icon-clipboard2"></span>
-									복사하기
-								</button>
-							</p>
-							<p>유채은
-								<button id="chaeeun-kakaopay" type="button" class="btn btn-outline-secondary btn-sm pull-right" value="1002-541-167080">
-									<span class="icon-comment"></span>
-									송금하기
-								</button>
-							</p>
-						</div>
-						<hr class="hr hr-blurry" />
-						<div class="accordion-body">
-							<p>기업은행 088-065956-02-018
-								<button id="chaeeun-father" type="button" class="btn btn-outline-secondary btn-sm pull-right bank-account" value="088-065956-02-018">
-									<span class="icon-clipboard2"></span>
-									복사하기
-								</button>
-							</p>
-							<p>유상보</p>
-						</div>
-						<hr class="hr hr-blurry" />
-						<div class="accordion-body">
-							<p>국민은행 823-21-0357-504
-								<button id="chaeeun-mother" type="button" class="btn btn-outline-secondary btn-sm pull-right bank-account" value="823-21-0357-504">
-									<span class="icon-clipboard2"></span>
-									복사하기
-								</button>
-							</p>
-							<p>이은경</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-<!-- </div> -->
-
 <!-- 카운트다운 -->
 <div id="qbootstrap-countdown" class="mt-5" style="padding: 7em 0;background-image: url(./images/photo/banner.JPG); background-position: center" data-section="wedding-day">
 	<div class="overlay"></div>
@@ -792,31 +589,59 @@
 <script src="js/main.js?v=20180722"></script>
 <!-- font-awesome -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-<script type="text/javascript">
+<!--COPY-->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
 
-	$(document).ready(function(){
+<script type='text/javascript'>
+	$(document).ready(function() {
 
-		var copyToClipboard = function(element){
-			var $element = $(element)
-			$element.focus();
-			navigator.clipboard.writeText($element.val())
-					.then(() => {
-						alert("계좌번호가 복사되었습니다.\n" + $element.val());
-					})
-		};
-
-		$('.bank-account').click(function(){
-			copyToClipboard($(this));
+		$(function(){    
+			var clipboard = new ClipboardJS('#copy');    
+			clipboard.on('success', function(e) {      
+				alert("복사 완료");    
+			});    
+			clipboard.on('error', function(e) {      
+				alert("복사 실패");    
+			});
 		});
+		
+		var option1 = {
+			html: true,
+			content: $('[data-name="popover-content-1"]')
 
-		$('#seungwoo-kakaopay').click(function(){
-			location.href = "https://qr.kakaopay.com/Ej8dJ5etU"
-		});
+		}
+		var exampleEl = document.getElementById('example-1')
+		var popover = new bootstrap.Popover(exampleEl, option1)
 
-		$('#chaeeun-kakaopay').click(function(){
-			location.href = "https://qr.kakaopay.com/FHzPiOZQm"
-		})
+		var option2 = {
+			html: true,
+			content: $('[data-name="popover-content-2"]')
+
+		}
+		var exampleEl = document.getElementById('example-2')
+		var popover = new bootstrap.Popover(exampleEl, option2)
+
+		var option3 = {
+			html: true,
+			content: $('[data-name="popover-content-3"]')
+
+		}
+		var exampleEl = document.getElementById('example-3')
+		var popover = new bootstrap.Popover(exampleEl, option3)
+
+		var option4 = {
+			html: true,
+			content: $('[data-name="popover-content-4"]')
+
+		}
+		var exampleEl = document.getElementById('example-4')
+		var popover = new bootstrap.Popover(exampleEl, option4)
+
+
+
+
 	})
 </script>
+
 </body>
 </html>
