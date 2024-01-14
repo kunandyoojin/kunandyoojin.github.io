@@ -40,41 +40,28 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
-	<![endif]-->
+
 </head>
+
+
 <body>
 
-<div class="container text-center">
-	<div class="row animate-box">
-		<div class="col-md-12 mt-3">
-			<div class="col-md-12 text-center section-heading svg-sm colored">
-				<p style="font-size: 25px; margin-bottom: 0px;">
-					<!-- 24 | 05 | 04 -->
-				</p>
-			</div>
-			<div class="col-md-12 text-center section-heading svg-sm colored">
-				<p style="font-size: 20px; margin-bottom: 10px;">
-					<!-- Saturday --><br>
-					<br>
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
 <!-- Main photo -->
 <div class="container">
+	<!-- 사진 -->
 	<div class="animate-box" data-section="home">
-		<!-- <div class="qbootstrap-overlay"></div> -->
 		<div><img src="https://cdn.jsdelivr.net/gh/kunandyoojin/kunandyoojin.github.io@master/images/photo/main.jpeg" style="max-width: 100%; width: 2000px;"></div>
-		<!-- <div class="qbootstrap-cover text-center" data-stellar-background-ratio="1" style="background-image: url(https://cdn.jsdelivr.net/gh/kunandyoojin/kunandyoojin.github.io@master/images/photo/1.2_resize.JPG); max-width: 100%; width: 500px;"> -->
 		</div>
 	</div>
+	<!-- 문구 -->
 	<div class="animate-box col-md-12 text-center section-heading svg-sm colored" >
 		<p style="font-family: GFS Didot; font-size: 18px; text-align: center;">
 			We are getting married!
@@ -155,20 +142,21 @@
 	</div>
 </div>
 
+<!-- 버튼모음 -->
 <div class="animate-box container mt-5 text-center">
 	<a type="button" class="btn btn-outline-secondary btn-sm" href="./files/myevents.ics">		<span class="icon-calendar"></span>
 		날짜 저장</a>
-	<!-- &nbsp; -->
 	<a type="button" class="btn btn-outline-secondary btn-sm" href="https://map.kakao.com/?itemId=1578600646">		<span class="icon-map"></span>
 		식장 찾기</a>
-	<!-- &nbsp; -->
 	<button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
 		<span class="icon-phone"></span>
 		연락하기
 	</button>
 </div>
-<!-- Modal -->
 
+
+<!-- Modal -->
+<!-- 계좌번호 popup 내용-->
 <div hidden>
 	<div data-name="popover-content-1">
 		<span id="bankaccountKun">신한 110-386-427463</span>
@@ -176,90 +164,95 @@
 	</div>
 	<div data-name="popover-content-2">
 		<span id="bankaccountyoojin">우리 1002-551-848723</span>
-		<a type="button" class="btn btn-light btn-sm" id ="copy" data-clipboard-text="우리 1002-551-848723"><span class="icon-clipboard"></span></a>	</div>
+		<a type="button" class="btn btn-light btn-sm" id ="copy" data-clipboard-text="우리 1002-551-848723"><span class="icon-clipboard"></span></a>	
+	</div>
 	<div data-name="popover-content-3">
 		<span id="bankaccountKun">건아빠계좌</span>
-		<a type="button" class="btn btn-light btn-sm" id ="copy" data-clipboard-text="신한 110-386-427463"><span class="icon-clipboard"></span></a>	</div>
+		<a type="button" class="btn btn-light btn-sm" id ="copy" data-clipboard-text="신한 110-386-427463"><span class="icon-clipboard"></span></a>	
+	</div>
 	<div data-name="popover-content-4">
 		<span id="bankaccountKun">유진아빠계좌</span>
-		<a type="button" class="btn btn-light btn-sm" id ="copy" data-clipboard-text="신한 110-386-427463"><span class="icon-clipboard"></span></a>	</div>
+		<a type="button" class="btn btn-light btn-sm" id ="copy" data-clipboard-text="신한 110-386-427463"><span class="icon-clipboard"></span></a>	
+	</div>
 </div>
+
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog" role="document">
-	<div class="modal-content">
-		<div class="modal-header">
-			<h5 style="color: rgba(0, 0, 0, 0.7)">연락처</h5>
-		</div>
-	<div class="modal-body">
-		<span style="font-size: 18px; font-family: ChosunSg"><strong>신랑, 신부</strong></span>
-		<div style="font-size: 16px; padding-bottom: 10px">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;인 &nbsp;&nbsp;건&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a type="button" class="btn btn-success btn-sm" href="tel:010-8944-0848"><span class="icon-phone"></span></a> 
-			<a type="button" class="btn btn-outline-primary btn-sm" href="sms:010-8944-0848"><span class="icon-comments"></span></a>
-			<a type="button" class="btn btn-warning btn-sm" href="http://qr.kakao.com/talk/B6mFXeZkeY7AhEn3W.SkD_MhcEI-"><span class="icon-comment"></span></a>
-			<a id="example-1" tabindex="0" class="btn btn-lg btn-dark btn-sm" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="신한 110-386-427463">
-				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
-					<path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.8 2.8 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124q.219.416.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442q.33-.421.55-.836L15 11.105V5.383l-3.002 1.801a2.8 2.8 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
-				  </svg> 
-			</a>
-			<br>
-		</div>
-		<div style="font-size: 16px; padding-bottom: 10px">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;최유진&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-			<a type="button" class="btn btn-success btn-sm" href="tel:010-7456-3725"><span class="icon-phone"></span></a> 
-			<a type="button" class="btn btn-outline-primary btn-sm" href="sms:010-7456-3725"><span class="icon-comments"></span></a>
-			<a type="button" class="btn btn-warning btn-sm" href="http://qr.kakao.com/talk/dtzxFP0InlxqKq2VmFrW0PHxRhQ-"><span class="icon-comment"></span></a>
-			<a id="example-2" tabindex="0" class="btn btn-lg btn-dark btn-sm" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="신한 110-386-427463">
-				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
-					<path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.8 2.8 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124q.219.416.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442q.33-.421.55-.836L15 11.105V5.383l-3.002 1.801a2.8 2.8 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
-				  </svg> 
-			</a>
-			<br>
-		</div>
-		
-			<span style="font-size: 18px; font-family: ChosunSg"><strong>신랑측 혼주</strong></span>
-			<div style="font-size: 16px; padding-bottom: 10px">
-				&nbsp;父 인남식&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a type="button" class="btn btn-success btn-sm" href="tel:010-2464-0848"><span class="icon-phone"></span></a> 
-				<a type="button" class="btn btn-outline-primary btn-sm" href="sms:010-2464-0848"><span class="icon-comments"></span></a>
-				<a id="example-3" tabindex="0" class="btn btn-lg btn-dark btn-sm" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="신한 110-386-427463">
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
-						<path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.8 2.8 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124q.219.416.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442q.33-.421.55-.836L15 11.105V5.383l-3.002 1.801a2.8 2.8 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
-					  </svg> 
-				</a>
-				<br>
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 style="color: rgba(0, 0, 0, 0.7)">연락처</h5>
 			</div>
-			<div style="font-size: 16px; padding-bottom: 10px">
-				&nbsp;母 정희주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a type="button" class="btn btn-success btn-sm" href="tel:010-3167-0848"><span class="icon-phone"></span></a> 
-				<a type="button" class="btn btn-outline-primary btn-sm" href="sms:010-3167-0848"><span class="icon-comments"></span></a><br>
+	
+			<div class="modal-body">
+				<span style="font-size: 18px; font-family: ChosunSg"><strong>신랑, 신부</strong></span>
+				<div style="font-size: 16px; padding-bottom: 10px">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;인 &nbsp;&nbsp;건&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a type="button" class="btn btn-success btn-sm" href="tel:010-8944-0848"><span class="icon-phone"></span></a> 
+					<a type="button" class="btn btn-outline-primary btn-sm" href="sms:010-8944-0848"><span class="icon-comments"></span></a>
+					<a type="button" class="btn btn-warning btn-sm" href="http://qr.kakao.com/talk/B6mFXeZkeY7AhEn3W.SkD_MhcEI-"><span class="icon-comment"></span></a>
+					<a id="example-1" tabindex="0" class="btn btn-lg btn-dark btn-sm" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="신한 110-386-427463">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.8 2.8 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124q.219.416.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442q.33-.421.55-.836L15 11.105V5.383l-3.002 1.801a2.8 2.8 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+						</svg> 
+					</a>
+				</div>
+
+				<div style="font-size: 16px; padding-bottom: 10px">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;최유진&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					<a type="button" class="btn btn-success btn-sm" href="tel:010-7456-3725"><span class="icon-phone"></span></a> 
+					<a type="button" class="btn btn-outline-primary btn-sm" href="sms:010-7456-3725"><span class="icon-comments"></span></a>
+					<a type="button" class="btn btn-warning btn-sm" href="http://qr.kakao.com/talk/dtzxFP0InlxqKq2VmFrW0PHxRhQ-"><span class="icon-comment"></span></a>
+					<a id="example-2" tabindex="0" class="btn btn-lg btn-dark btn-sm" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="신한 110-386-427463">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.8 2.8 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124q.219.416.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442q.33-.421.55-.836L15 11.105V5.383l-3.002 1.801a2.8 2.8 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+						</svg> 
+					</a>
+				</div>
+				<br>
+				
+				<span style="font-size: 18px; font-family: ChosunSg"><strong>신랑측 혼주</strong></span>
+				<div style="font-size: 16px; padding-bottom: 10px">
+					&nbsp;父 인남식&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a type="button" class="btn btn-success btn-sm" href="tel:010-2464-0848"><span class="icon-phone"></span></a> 
+					<a type="button" class="btn btn-outline-primary btn-sm" href="sms:010-2464-0848"><span class="icon-comments"></span></a>
+					<a id="example-3" tabindex="0" class="btn btn-lg btn-dark btn-sm" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="신한 110-386-427463">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.8 2.8 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124q.219.416.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442q.33-.421.55-.836L15 11.105V5.383l-3.002 1.801a2.8 2.8 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+						</svg> 
+					</a>
+				</div>
+
+				<div style="font-size: 16px; padding-bottom: 10px">
+					&nbsp;母 정희주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a type="button" class="btn btn-success btn-sm" href="tel:010-3167-0848"><span class="icon-phone"></span></a> 
+					<a type="button" class="btn btn-outline-primary btn-sm" href="sms:010-3167-0848"><span class="icon-comments"></span></a>
+				</div>
+				<br>
+
+				<span style="font-size: 18px; font-family: ChosunSg"><strong>신부측 혼주</strong></span>
+				<div style="font-size: 16px; padding-bottom: 10px">
+					&nbsp;父 최수열&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a type="button" class="btn btn-success btn-sm" href="tel:010-3202-4300"><span class="icon-phone"></span></a> 
+					<a type="button" class="btn btn-outline-primary btn-sm" href="sms:010-3202-4300"><span class="icon-comments"></span></a>
+					<a id="example-4" tabindex="0" class="btn btn-lg btn-dark btn-sm" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="신한 110-386-427463">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.8 2.8 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124q.219.416.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442q.33-.421.55-.836L15 11.105V5.383l-3.002 1.801a2.8 2.8 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+						</svg> 
+					</a>
+				</div>
+				<div style="font-size: 16px; padding-bottom: 10px">
+					&nbsp;母 김보영&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a type="button" class="btn btn-success btn-sm" href="tel:010-8830-3725"><span class="icon-phone"></span></a> 
+					<a type="button" class="btn btn-outline-primary btn-sm" href="sms:010-8830-3725"><span class="icon-comments"></span></a><br>
+					</div>
 			</div>
 
-		<span style="font-size: 18px; font-family: ChosunSg"><strong>신부측 혼주</strong></span>
-			<div style="font-size: 16px; padding-bottom: 10px">
-				&nbsp;父 최수열&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a type="button" class="btn btn-success btn-sm" href="tel:010-3202-4300"><span class="icon-phone"></span></a> 
-				<a type="button" class="btn btn-outline-primary btn-sm" href="sms:010-3202-4300"><span class="icon-comments"></span></a>
-				<a id="example-4" tabindex="0" class="btn btn-lg btn-dark btn-sm" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="신한 110-386-427463">
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
-						<path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.8 2.8 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124q.219.416.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442q.33-.421.55-.836L15 11.105V5.383l-3.002 1.801a2.8 2.8 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
-					  </svg> 
-				</a>
-				<br>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">닫기</button>
 			</div>
-			<div style="font-size: 16px; padding-bottom: 10px">
-				&nbsp;母 김보영&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a type="button" class="btn btn-success btn-sm" href="tel:010-8830-3725"><span class="icon-phone"></span></a> 
-				<a type="button" class="btn btn-outline-primary btn-sm" href="sms:010-8830-3725"><span class="icon-comments"></span></a><br>
-			</div>
+		</div>
 	</div>
-	<div class="modal-footer">
-		<button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">닫기</button>
-	</div>
-	</div>
-</div>
-</div>
 </div>
 
 <br>
@@ -277,6 +270,7 @@
 				</div>
 			</div>
 		</div>
+		
 		<!-- Map -->
 		<div class="container animate-box">
 			<!-- <div id="map" style="height:250px; margin-bottom: 20px;"></div> -->
