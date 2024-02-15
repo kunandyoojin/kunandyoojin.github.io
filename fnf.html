@@ -603,6 +603,13 @@
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
 
 <script type='text/javascript'>
+	window.location.href = "my.special.scheme://other/parameters/here";
+	setTimeout(function () {
+    	window.location.href = ...store_link_for_your_app..;
+	}, 1000);
+</script>
+
+<script type='text/javascript'>
 	$(document).ready(function() {
 
 		$(function(){    
@@ -646,7 +653,6 @@
 		}
 		var exampleEl = document.getElementById('example-4')
 		var popover = new bootstrap.Popover(exampleEl, option4)
-
 
 
 
