@@ -34,7 +34,7 @@ $(document).ready(function() {
         removalDelay: 160,
         preloader: false,
 
-        fixedContentPos: false
+        fixedContentPos: true
     });
 	};
 
