@@ -693,53 +693,10 @@
 
 <script type='text/javascript'>
 	document.getElementById('appButton').addEventListener('click', function() {
-		var appLink = "nmap://route/public?dlat=37.5047411&dlng=126.9949844&did=1791250969&dname=%EB%82%A8%EC%84%9C%EC%9A%B8%EA%B5%90%ED%9A%8C&appname=com.example.myapp";
-		var webLink = "https://naver.me/FsKK25A9";
-
-		function openApp() {
-			window.location.href = appLink;
-		}
-
-		function openWeb() {
-			window.location.href = webLink;
-		}
-
-		// Check if the app link can be opened
-		function testAppLink() {
-			var iframe = document.createElement('iframe');
-			iframe.style.display = 'none';
-			document.body.appendChild(iframe);
-
-			iframe.src = appLink;
-
-			setTimeout(function() {
-				document.body.removeChild(iframe);
-				openWeb(); // If app link doesn't work, open web link
-			}, 2000);
-		}
-
-		// Open the app if it's installed, otherwise open the web link
-		if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
-			// For iOS
-			if (window.location.href.indexOf('http') === 0) {
-				testAppLink();
-			} else {
-				openWeb();
-			}
-		} else if (navigator.userAgent.match(/Android/)) {
-			// For Android
-			testAppLink();
-		} else {
-			openWeb(); // Open web link for other platforms
-		}
-	});
-</script>
-
-<script type='text/javascript'>
-	window.location.href = "my.special.scheme://other/parameters/here";
-	setTimeout(function () {
-    	window.location.href = ...store_link_for_your_app..;
-	}, 1000);
+		window.location.href = "nmap://route/public?dlat=37.5047411&dlng=126.9949844&did=1791250969&dname=%EB%82%A8%EC%84%9C%EC%9A%B8%EA%B5%90%ED%9A%8C&appname=com.example.myapp";
+		setTimeout(function () {
+			window.location.href = "https://naver.me/FsKK25A9";
+		}, 1000);
 </script>
 
 <script type='text/javascript'>
