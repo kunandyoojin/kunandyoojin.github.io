@@ -11,7 +11,7 @@ $(document).ready(function() {
 			closeOnBgClick: true,
 			fixedContentPos: true,
 			zoom: {
-				enabled: true, // By default it's false, so don't forget to enable it
+				enabled: false, // By default it's false, so don't forget to enable it
 
 				duration: 300, // duration of the effect, in milliseconds
 				easing: 'ease-in-out', // CSS transition easing function
