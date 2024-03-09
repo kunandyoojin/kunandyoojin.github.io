@@ -8,12 +8,6 @@ $(document).ready(function() {
 			gallery:{
 				enabled:true
 			},
-			callbacks: {
-				open: function() {
-					// Add a class to the popup container to trigger horizontal layout
-					$('.mfp-container').addClass('horizontal-layout');
-				}
-			}
 			zoom: {
 				enabled: true, // By default it's false, so don't forget to enable it
 
