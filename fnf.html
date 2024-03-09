@@ -297,21 +297,12 @@
 
 			<script>
 				var map = new naver.maps.Map('map', {
-					center: new naver.maps.LatLng(37.5112, 127.0981), // 잠실 롯데월드를 중심으로 하는 지도
+					center: new naver.maps.LatLng(37.5047411, 126.9949844),
 					zoom: 15
 				});
-				
-				// document.getElementById로 DOM 요소 전달도 가능
-				var map = new naver.maps.Map(document.getElementById('map'), {
-					center: new naver.maps.LatLng(37.5112, 127.0981),
-					zoom: 15
-				});
-				
-				// 두 번째 인수의 기본값은 서울 시청을 중심으로 하는 16레벨의 지도이다.
-				var map = new naver.maps.Map('map');
 
 				var marker = new naver.maps.Marker({
-					position: new naver.maps.LatLng(37.5112, 127.0981),
+					position: new naver.maps.LatLng(37.5047411, 126.9949844),
 					map: map
 });
 			</script>
