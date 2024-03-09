@@ -9,7 +9,7 @@ $(document).ready(function() {
 				enabled:true
 			},
 			closeOnBgClick: true,
-			fixedContentPos: true,
+			fixedContentPos: false,
 			zoom: {
 				enabled: false, // By default it's false, so don't forget to enable it
 
