@@ -722,10 +722,9 @@
 		if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
 			// For iOS
 			if (window.location.href.indexOf('http') === 0) {
-				// If the page is not served over HTTPS, iOS will not be able to open the app directly
-				openWeb();
-			} else {
 				testAppLink();
+			} else {
+				openWeb();
 			}
 		} else if (navigator.userAgent.match(/Android/)) {
 			// For Android
