@@ -138,7 +138,7 @@
 				<!-- <div class="animate-box container mt-5 text-center"> -->
 					<a type="button" class="btn btn-outline-secondary btn-sm" href="./files/myevents.ics">		<span class="icon-calendar"></span>
 						날짜 저장</a>
-					<a id="redirectButton" class="btn btn-outline-secondary btn-sm" href="#">	<span class="icon-map"></span>
+					<a id="appButton" class="btn btn-outline-secondary btn-sm" >	<span class="icon-map"></span>
 						식장 찾기</a>
 					<!-- <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
 						<span class="icon-phone"></span>
@@ -692,33 +692,49 @@
 
 
 <script type='text/javascript'>
-	document.getElementById("redirectButton").addEventListener("click", function() {
-	  // Check if the app is installed
-	  if (isAppInstalled()) {
-		// Open the app using a custom URL scheme
-		window.location.href = "nmap://route/public?dlat=37.5047411&dlng=126.9949844&did=1791250969&dname=%EB%82%A8%EC%84%9C%EC%9A%B8%EA%B5%90%ED%9A%8C&appname=com.example.myapp";
-	  } else {
-		// Redirect the user to a website
-		window.location.href = "https://naver.com";
-	  }
+	document.getElementById('appButton').addEventListener('click', function() {
+		var appLink = "nmap://route/public?dlat=37.5047411&dlng=126.9949844&did=1791250969&dname=%EB%82%A8%EC%84%9C%EC%9A%B8%EA%B5%90%ED%9A%8C&appname=com.example.myapp";
+		var webLink = "https://naver.com";
+
+		function openApp() {
+			window.location.href = appLink;
+		}
+
+		function openWeb() {
+			window.location.href = webLink;
+		}
+
+		// Check if the app link can be opened
+		function testAppLink() {
+			var iframe = document.createElement('iframe');
+			iframe.style.display = 'none';
+			document.body.appendChild(iframe);
+
+			iframe.src = appLink;
+
+			setTimeout(function() {
+				document.body.removeChild(iframe);
+				openWeb(); // If app link doesn't work, open web link
+			}, 2000);
+		}
+
+		// Open the app if it's installed, otherwise open the web link
+		if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
+			// For iOS
+			if (window.location.href.indexOf('http') === 0) {
+				// If the page is not served over HTTPS, iOS will not be able to open the app directly
+				openWeb();
+			} else {
+				testAppLink();
+			}
+		} else if (navigator.userAgent.match(/Android/)) {
+			// For Android
+			testAppLink();
+		} else {
+			openWeb(); // Open web link for other platforms
+		}
 	});
-	
-	function isAppInstalled() {
-	  // Check if the app is installed by trying to open it
-	  var testUrl = "nmap://route/public?dlat=37.5047411&dlng=126.9949844&did=1791250969&dname=%EB%82%A8%EC%84%9C%EC%9A%B8%EA%B5%90%ED%9A%8C&appname=com.example.myapp";
-	  var iframe = document.createElement("iframe");
-	  iframe.style.display = "none";
-	  iframe.src = testUrl;
-	  document.body.appendChild(iframe);
-	  
-	  setTimeout(function() {
-		document.body.removeChild(iframe);
-	  }, 3000); // Adjust timeout as needed
-	  
-	  // If the app opens successfully, it's installed
-	  return true;
-	}
-	</script>
+</script>
 
 <script type='text/javascript'>
 	window.location.href = "my.special.scheme://other/parameters/here";
