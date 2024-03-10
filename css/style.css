@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'GFS Didot';
-  src: '/fonts/GFS_Didot/GFSDidot-Regular.ttf';
+  src: url('https://cdn.jsdelivr.net/gh/kunandyoojin/kunandyoojin.github.io@master/fonts/GFS_Didot/GFSDidot-Regular.ttf') format('ttf');
   font-weight: normal;
 }
 
