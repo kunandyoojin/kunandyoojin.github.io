@@ -301,11 +301,19 @@
 					zoom: 15
 				});
 				
-				map.draggable(false); 
-
 				var marker1 = new naver.maps.Marker({
 					position: new naver.maps.LatLng(37.5047411, 126.9949844),
 					map: map
+				});
+
+				map.setOptions({ //지도 인터랙션 끄기
+					draggable: false,
+					pinchZoom: false,
+					scrollWheel: false,
+					keyboardShortcuts: false,
+					disableDoubleTapZoom: true,
+					disableDoubleClickZoom: true,
+					disableTwoFingerTapZoom: true
 				});
 
 
