@@ -301,23 +301,23 @@
 					zoom: 15
 				});
 
-				var icon = {
-					url: HOME_PATH +'/img/example/sp_pins_spot_v3.png',
-					size: new naver.maps.Size(24, 37),
-					anchor: new naver.maps.Point(12, 37),
-					origin: new naver.maps.Point(0, 0)
-				};
-
 				var marker1 = new naver.maps.Marker({
 					position: new naver.maps.LatLng(37.5047411, 126.9949844),
 					map: map
 				});
 
-				var marker2 = new naver.maps.Marker({
+				var marker2Options = {
 					position: new naver.maps.LatLng(37.50567271, 126.9960581),
 					map: map,
-					icon: icon
-				});
+					icon: {
+						url: HOME_PATH +'/img/example/sally.png',
+						size: new naver.maps.Size(50, 52),
+						origin: new naver.maps.Point(0, 0),
+						anchor: new naver.maps.Point(25, 26)
+					}
+				};
+
+				var marker2 = new naver.maps.Marker(marker2Options);
 
 				var marker3 = new naver.maps.Marker({
 					position: new naver.maps.LatLng(37.50460012, 126.99596911),
@@ -563,15 +563,15 @@
 					</div>
 					<div class="col-4">
 						<div class="gallery">
-							<a class="gallery-img image-popup" href="https://cdn.jsdelivr.net/gh/kunandyoojin/kunandyoojin.github.io@master/images/photo/21.jpeg">
-								<img src="./images/photo/21small.jpeg" class="img-responsive d-block">
+							<a class="gallery-img image-popup" href="https://cdn.jsdelivr.net/gh/kunandyoojin/kunandyoojin.github.io@master/images/photo/23.jpeg">
+								<img src="./images/photo/23small.jpeg" class="img-responsive d-block">
 							</a>
 						</div>
 					</div>
 					<div class="col-4">
 						<div class="gallery">
-							<a class="gallery-img image-popup" href="https://cdn.jsdelivr.net/gh/kunandyoojin/kunandyoojin.github.io@master/images/photo/22.jpeg">
-								<img src="./images/photo/22small.jpeg" class="img-responsive d-block">
+							<a class="gallery-img image-popup" href="https://cdn.jsdelivr.net/gh/kunandyoojin/kunandyoojin.github.io@master/images/photo/26.jpeg">
+								<img src="./images/photo/26small.jpeg" class="img-responsive d-block">
 							</a>
 						</div>
 					</div>
