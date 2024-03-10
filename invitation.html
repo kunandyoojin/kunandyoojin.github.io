@@ -301,7 +301,7 @@
 				var contentString = [
 						'<div style="width:150px;padding:10px;">',
 						'    <div style="text-align:left;"><b>남서울교회</b></div>',
-						'    <div> <a id = "appButton" style = "color: rgba(13, 0, 255, 0.7); font-size: 13px">길찾기</a>  </div>',
+						'    <div style="text-align:right;> <a id="appButton4" style = "color: rgba(13, 0, 255, 0.7); font-size: 13px">길찾기</a>  </div>',
 						'</div>'
 					].join('');
 
@@ -686,6 +686,15 @@
 		window.location.href = "nmap://route/public?dlat=37.50460012&dlng=126.9959691&dname=반포2동 공영주차장&appname=com.example.myapp";
 		setTimeout(function () {
 			window.location.href = "https://m.place.naver.com/place/36010863/home";
+		}, 1000);
+	})
+</script>
+
+<script type='text/javascript'>
+	document.getElementById('appButton4').addEventListener('click', function() {
+		window.location.href = "nmap://route/public?dlat=37.5047411&dlng=126.9949844&did=1791250969&dname=%EB%82%A8%EC%84%9C%EC%9A%B8%EA%B5%90%ED%9A%8C&appname=com.example.myapp";
+		setTimeout(function () {
+			window.location.href = "https://naver.me/FsKK25A9";
 		}, 1000);
 	})
 </script>
