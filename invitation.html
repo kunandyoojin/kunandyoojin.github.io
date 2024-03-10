@@ -136,19 +136,13 @@
 					<br>
 					예배 결혼식으로 진행되며, 화환은 정중히 사양합니다.
 				</p>
-				<!-- <div class="animate-box container mt-5 text-center"> -->
 					<a type="button" class="btn btn-outline-secondary btn-sm" href="./files/myevents.ics">		<span class="icon-calendar"></span>
 						날짜 저장</a>
-					<a id="appButton" class="btn btn-outline-secondary btn-sm" >	<span class="icon-map"></span>
+					<a id="appButton" class="btn btn-outline-secondary btn-sm" ><span class="icon-map"></span>
 						식장 찾기</a>
-					<!-- <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-						<span class="icon-phone"></span>
-						연락하기
-					</button> -->
 					<br>
 					<br>
 					<hr>
-				<!-- </div> -->
 			</div>
 			<br>
 		</div>
@@ -193,8 +187,6 @@
 				<hr style="width:60px; margin: auto;" class="border-1"/>
 				<div style="font-size: 16px; padding-bottom: 10px; margin-top: 15px;">
 					인 &nbsp;&nbsp;건&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<!-- <a type="button" class="btn btn-success btn-sm" href="tel:010-8944-0848"><span class="icon-phone"></span></a>  -->
-					<!-- <a type="button" class="btn btn-outline-primary btn-sm" href="sms:010-8944-0848"><span class="icon-comments"></span></a> -->
 					<a type="button" class="btn btn-warning btn-sm" href="http://qr.kakao.com/talk/B6mFXeZkeY7AhEn3W.SkD_MhcEI-"><span class="icon-comment"></span></a>
 					<a id="example-1" tabindex="0" class="btn btn-lg btn-dark btn-sm" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="신한 110-386-427463">
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
@@ -206,8 +198,6 @@
 
 				<div style="font-size: 16px; padding-bottom: 10px">
 					최유진&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-					<!-- <a type="button" class="btn btn-success btn-sm" href="tel:010-7456-3725"><span class="icon-phone"></span></a>  -->
-					<!-- <a type="button" class="btn btn-outline-primary btn-sm" href="sms:010-7456-3725"><span class="icon-comments"></span></a> -->
 					<a type="button" class="btn btn-warning btn-sm" href="http://qr.kakao.com/talk/dtzxFP0InlxqKq2VmFrW0PHxRhQ-"><span class="icon-comment"></span></a>
 					<a id="example-2" tabindex="0" class="btn btn-lg btn-dark btn-sm" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="신한 110-386-427463">
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
@@ -266,13 +256,6 @@
 </div>
 
 
-
-
-<!-- Modal -->
-<!-- 계좌번호 popup 내용-->
-
-
-
 <br>
 <hr>
 
@@ -292,7 +275,6 @@
 		<br>
 		<!-- Map -->
 		<div class="container animate-box">
-			<!-- <div id="map" style="height:250px; margin-bottom: 20px;"></div> -->
 			<div id="map" style="width:100%;height:250px;"></div>
 
 			<script>
@@ -314,6 +296,16 @@
 					disableDoubleTapZoom: false,
 					disableDoubleClickZoom: true,
 					disableTwoFingerTapZoom: false
+				});
+
+				var contentString = [
+						'<div class="iw_inner">',
+						'   <h3>남서울교회</h3>',
+						'</div>'
+					].join('');
+
+				var infowindow = new naver.maps.InfoWindow({
+					content: contentString
 				});
 
 
